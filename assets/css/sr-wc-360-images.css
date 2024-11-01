@@ -1,0 +1,36 @@
+#sr-product-360-view-images-list li {
+    float: left;
+    width: 150px;
+    text-align: center;
+    margin: 10px 10px 10px 0;
+    cursor: move
+}
+#sr-product-360-view-images-list li img {
+    max-width: 150px;
+}
+#colorSelector,
+.sr_background_color_ {
+    display: none
+}
+
+.sr_custom_background_color_:checked+#colorSelector {
+    display: block;
+    display: inline-flex
+}
+
+#colorSelector {
+    position: relative;
+    top: 5px;
+    left: 5px
+}
+
+#colorSelector div {
+    font-size: 0;
+    background-color: #d3eb1e;
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    border-radius: 2px;
+    border: 3px solid #000;
+    cursor: crosshair
+}

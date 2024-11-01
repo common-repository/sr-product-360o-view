@@ -1,0 +1,33 @@
+.superrishi-popup-container {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255,255,255);
+}
+.superrishi-popup {
+    display: block;
+    position: relative;
+    top: 15vh;
+    left: 0;
+    width: 500px;
+    margin: auto;
+    border: 2px solid #cfcfcf;
+    padding: 0px 25px 25px;
+    max-width: 80%;
+    background-color: #fff;
+}
+
+.superrishi-popup-container:last-of-type {
+    display: none;
+}
+
+#superrishi-domain-link-popup.blur-no-click {
+    pointer-events: none;
+}
+
+#superrishi-domain-link-popup.blur-no-click * {
+    color: #0007 !important;
+}

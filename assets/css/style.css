@@ -1,0 +1,271 @@
+/* Thin */
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Thin Italic */
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* Light */
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Light Italic */
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Regular Italic */
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Black */
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Black Italic */
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+.superrishi-plugin-settings-container a,
+.superrishi-plugin-settings-container h2,
+.superrishi-plugin-settings-container h3,
+.superrishi-plugin-settings-container p,
+.superrishi-plugin-settings-container span,
+.superrishi-plugin-settings-container label,
+.superrishi-plugin-settings-container button,
+.superrishi-plugin-settings-container input {
+    color: rgb(50, 50, 50);
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+.superrishi-plugin-settings-container a {
+    text-decoration: none;
+}
+
+.superrishi-plugin-settings-container .success {
+    color: #090;
+}
+
+.superrishi-plugin-settings-container .error {
+    color: #900;
+}
+
+.superrishi-plugin-settings-container #superrishi-ajax-response .success {
+    background-color: #fff;
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px .5px #cfcfcf;
+}
+
+.superrishi-plugin-settings-container #superrishi-ajax-response .success img {
+    vertical-align: sub;
+    max-width: 20px;
+}
+
+
+.superrishi-plugin-settings-container {
+    background: rgba(150, 150, 150, 0.1);
+    padding: 10px 20px;
+    min-height: 100vh;
+}
+
+.superrishi-plugin-settings-header,
+.superrishi-logo-link,
+.superrishi-logo-text,
+.superrishi-header-nav,
+.superrishi-header-menu {
+    display: block;
+}
+
+.superrishi-header-menu {
+    padding-left: 0;
+    /*chrome added un-needed 40px padding to the ul element by defautl.*/
+    text-align: left;
+}
+
+.superrishi-header-menu .superrishi-header-menu-item,
+.superrishi-header-menu .superrishi-header-menu-item .superrishi-header-menu-item-link {
+    font-size: 15px;
+}
+
+.superrishi-header-logo,
+.superrishi-header-menu-item {
+    display: inline-block;
+}
+
+.superrishi-header-logo {
+    border-bottom: 1px solid #cfcfcf;
+    margin: 30px 0 7px 17px;
+}
+
+.superrishi-logo-text {
+    letter-spacing: 2px;
+}
+
+.superrishi-header-menu-item {
+    margin: 15px 0px;
+    border-right: 1px solid #afafaf;
+}
+
+.superrishi-header-menu-item:last-child {
+    border-right: none;
+}
+
+.superrishi-header-menu-item-link {
+    padding: 5px 8px;
+    margin: 0px 8px;
+    font-weight: bold;
+}
+
+.superrishi-header-menu-item-link:hover {
+    border: 1px solid #afafaf;
+    margin: 0px 7.3px;
+}
+
+.superrishi-header-menu-item-link.current-page {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.superrishi-header-menu-has-sub-menu {
+    position: relative;
+}
+
+.superrishi-header-menu-has-sub-menu>.superrishi-header-sub-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    background: rgb(240, 240, 240);
+    padding-left: 17px;
+    border: 1px solid #bfbfbf;
+    width: 210%;
+}
+
+.superrishi-header-menu-has-sub-menu .superrishi-header-menu-item-link:hover {
+    border: none;
+    margin: 0px 8px;
+}
+
+.superrishi-header-menu-has-sub-menu:hover>.superrishi-header-sub-menu {
+    display: inline-block;
+}
+
+.superrishi-header-sub-menu-item {
+    list-style: none;
+    margin: 7px 0 8px 0;
+}
+
+.superrishi-fix-down-arrow {
+    position: absolute;
+    top: -2px;
+    right: 7px;
+}
+
+.superrishi-header-sub-menu-item-link:hover {
+    border-bottom: 0.5px dotted;
+}
+
+.superrishi-setting-row {
+    width: 97.5%;
+    margin: auto;
+}
+
+.superrishi-setting-output {
+    padding: 8px 15px;
+}
+
+.superrishi-para, label, input {
+    text-shadow: 0.1px 0.1px gray;
+}
+
+.superrishi-para.para-small {
+    font-size: 16px;
+}
+
+.superrishi-para.para-med {
+    font-size: 18px;
+}
+
+.superrishi-para.para-note {
+    font-size: 12px;
+    font-family: monospace !important;
+}
+
+.help-link {
+    color: #009 !important;
+    font-size: 14px;
+    border-bottom: 0.5px dotted;
+}
+
+.superrishi-footer-copyr {
+    text-align: center;
+    margin-top: 65px;
+    padding-top: 12px;
+    border-top: 1px solid #e0e0e0;
+}
+
+/*Shortcodes page/modal CSS*/
+#sr-360-shortcodes .code {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-left: 3px solid #7b7b7b;
+}
+#sr-360-shortcodes h2 {
+    color: #3b3b3b;
+}
+/*Shortcodes page/modal css end*/

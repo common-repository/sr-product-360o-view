@@ -1,0 +1,25 @@
+.sr-notice-container, .sr-notice-container * {
+    color: #333;
+    text-decoration: none;
+    background-color: #efefef !important;
+    font-family: sans-serif;
+}
+
+.sr-section-left, .sr-section-right {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px 4px;
+}
+
+.sr-notice-container a.navbar-brand {
+    font-weight: bold;
+    color: #777;
+    padding: 40px 7px;
+    background-color: #e4e4e4 !important;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+.sr-notice-container a.navbar-brand:hover {
+    color: #222;
+}

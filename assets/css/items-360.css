@@ -1,0 +1,193 @@
+.product-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-table th, .product-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.product-table td {
+    font-weight: 500;
+}
+.product-table td:nth-child(2) {
+    font-size: 16px;
+}
+
+.product-table th {
+    background-color: #f2f2f2;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    border: 2px solid #efefef;
+    width: 80%;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 6px;
+    top: 4px;
+    color: #777;
+    float: right;
+    font-size: 28px !important;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/* Media Query for Mobile Screens */
+@media screen and (max-width: 600px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+/* Style for even and odd rows */
+.product-table table tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Light shade for odd rows */
+}
+
+.product-table table tr:nth-child(even) {
+    background-color: #ffffff; /* White or different shade for even rows */
+}
+
+/* Add space above the table for dropdown and search */
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_length {
+    margin-bottom: 10px;
+}
+
+.dataTables_wrapper .dataTables_filter input,
+.dataTables_wrapper .dataTables_length select {
+    height: 36px;
+}
+
+/* Adjust column widths */
+.product-table table th:first-child {
+    width: 5%; /* Less width for first column */
+}
+.product-table table td:first-child {
+    text-align: center;
+}
+
+.product-table table th:nth-child(2) {
+    width: 30%; /* More width for name column */
+}
+
+.product-table select {
+    width: 45px;
+}
+
+/*CSS for settings popup*/
+#editModal .responsive-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+#editModal .responsive-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#editModal .responsive-table th, #editModal .responsive-table td {
+    /*    border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;*/
+}
+
+#editModal .responsive-table th {
+    background-color: #f2f2f2;
+}
+
+/* Responsive behavior */
+@media screen and (max-width: 600px) {
+    #editModal .responsive-table table {
+        border: 0;
+    }
+
+    #editModal .responsive-table th,
+    #editModal .responsive-table td {
+        display: block;
+        width: 100%;
+    }
+
+    #editModal .responsive-table td {
+        border-top: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    #editModal .responsive-table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 8px;
+        white-space: nowrap;
+    }
+}
+/*CSS for settings popup end*/
+
+/*Customizing settings form for individual settings*/
+
+#superrishi-individual-settings {
+    visibility: collapse;
+}
+
+#superrishi-individual-settings table {
+    margin: auto;
+    max-width: 649px;
+}
+/*Customizing settings form for individual settings end*/

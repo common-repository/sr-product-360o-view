@@ -1,0 +1,224 @@
+.superrishi-form-container .superrishi-form {
+    display: block;
+    border: 2px solid #a0a0a0;
+    padding: 3.5% 3% 2.5%;
+    width: 55%;
+    min-width: 350px;
+}
+
+.superrishi-form label {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.superrishi-form label {
+    display: block;
+    margin-bottom: 50px;
+    font-size: 1.2vw;
+    letter-spacing: 3px;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .superrishi-form label {
+        font-size: 2vw;
+    }
+}
+
+.superrishi-form label input[type='text'],
+.superrishi-form label input[type='password'] {
+    width: 60%;
+    float: right;
+    margin-top: -4.5px;
+    border-radius: 3px;
+    border: 2px solid #cfcfcf;
+    height: 33px;
+    background-color: #efefef;
+    padding: 0 1.5%;
+    letter-spacing: 1px;
+}
+
+.superrishi-form input[type='submit'] {
+    padding: 2px 18px 3.5px;
+    font-size: 16px;
+}
+
+.superrishi-buttons {
+    display: inline-block;
+    width: 100%;
+}
+
+.superrishi-buttons button {
+    padding: 4px 12px;
+}
+
+.superrishi-button-left {
+    float: left;
+}
+
+.superrishi-button-right {
+    float: right;
+}
+
+/*Global Settings CSS Start*/
+.superrishi-settings-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.superrishi-settings-form fieldset {
+    flex-basis: calc(50% - 20px); /* Two columns on large screens */
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.superrishi-settings-form legend {
+    font-weight: bold;
+}
+
+.superrishi-settings-form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.superrishi-settings-form label input {
+    margin-left: 15px;
+    margin-top: 2px;
+}
+
+.superrishi-settings-form label input[type="range"],
+.superrishi-settings-form label select {
+    margin-left: 10px;
+    flex-grow: 1;
+}
+.superrishi-settings-form label input[type="number"] {
+    max-width: 75px;
+}
+
+.superrishi-settings-form label select {
+    max-width: 120px;
+}
+
+.icon-thumb, .icon-thumb-small {
+    width: 58px;
+    margin-left: 100px;
+}
+
+.icon-thumb-small {
+    width: 25px;
+}
+
+div.range-container {
+    display: inline-flex;
+    position: relative;
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+span.least-value, span.max-value, span.default-value {
+    position: absolute;
+    left: 10px;
+    top: 18px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: text;
+}
+
+span.max-value {
+    left: unset;
+    right: 2px;
+}
+
+span.default-value {
+    left: 75%;
+    border-bottom: 1px dotted #333;
+    cursor: pointer;
+    color:#090;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+    .superrishi-settings-form fieldset {
+        flex-basis: 100%; /* One column on small screens */
+    }
+}
+/*Global Settings CSS End*/
+
+/*Import Images CSS Start*/
+/* Base styles for the table */
+.superrishi-import-images-form .import-images-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.superrishi-import-images-form td {
+    padding: 8px;
+}
+
+/* Styling for the second column */
+.superrishi-import-images-form td:nth-child(2) {
+    width: 70%;
+}
+
+/* Styles for <code> tag */
+.superrishi-import-images-form code {
+    display: block;
+    margin-top: 8px;
+}
+
+/* Styles for input[type="text"] */
+.superrishi-import-images-form input[type="text"] {
+    width: calc(100% - 220px); /* Adjusting width to accommodate select elements */
+    display: inline-block;
+    margin-right: 8px;
+}
+
+/* Styles for select elements */
+.superrishi-import-images-form select {
+    width: 75px; /* Adjust as needed */
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.live_logs_printing {
+    display: none;
+}
+
+#current-logs-flow {
+    display: block;
+    max-height: 250px;
+    overflow-y: scroll;
+    background-color: lightgray;
+    padding: 10px 10px 10px 15px !important;
+    list-style-position: inside !important;
+}
+
+#sr360-download-import-log {
+    cursor: pointer;
+    pointer-events: none;
+    opacity: .2;
+}
+
+#sr360-download-import-log i {
+    vertical-align: middle;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .superrishi-import-images-form input[type="text"],
+    .superrishi-import-images-form select {
+        width: 100%;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .superrishi-import-images-form td:nth-child(2) {
+        width: auto;
+    }
+}
+/*Import Images CSS End*/

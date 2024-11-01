@@ -1,0 +1,53 @@
+/* General accordion styles */
+#faq-container .accordion {
+    background-color: #f2f2f2; /* Default background */
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-bottom: 1px solid #ddd; /* Separation line between accordions */
+    position: relative; /* For positioning the arrow */
+}
+
+/* Style for even FAQ titles */
+#faq-container .accordion:nth-child(even) {
+    background-color: #e7eff6;
+}
+
+/* Style for odd FAQ titles */
+#faq-container .accordion:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+/* Style for active or hovered accordion title */
+#faq-container .accordion.active, #faq-container .accordion:hover {
+    background-color: #d1d1d1; 
+}
+
+/* Panel (content) styles */
+#faq-container .panel {
+    padding: 20px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd; /* Border for the last panel */
+}
+
+/* Arrow styles */
+#faq-container .accordion:after {
+    content: '\25bc'; /* Down arrow */
+    font-size: 13px;
+    color: #777;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#faq-container .accordion.active:after {
+    content: '\25b2'; /* Up arrow */
+}
